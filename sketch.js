@@ -41,7 +41,7 @@ function draw(){
 async function getBackgroundImg(){
 
     // write code to fetch time from API
-    var response = await fetch("http://worldtimeapi.org/api/timezone/Europe/Luxembourg")
+    var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Tokyo")
     var responseJSON = await response.json();
     console.log(responseJSON);
     var datetime = responseJSON.datetime;
@@ -58,7 +58,7 @@ async function getBackgroundImg(){
     
 
     
-    if(hour>=0 && hour<18 ){
+    if(time>=0 && time<18 ){
         bg = "sunrise.png";
     }
     else{
